@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e58bd491f91436cbcd3da6e74e04ef, type: 3}
+  m_Name: Truck
+  m_EditorClassIdentifier: 
+  soundList:
+  - {fileID: 8300000, guid: bf1c61472e63243378ccd0b211f48e17, type: 3}
+  - {fileID: 8300000, guid: 9f143aba476744892b79c90caea4bb84, type: 3}
+  - {fileID: 8300000, guid: a680c420d47504161b2ff7d16c910b98, type: 3}
+  - {fileID: 8300000, guid: bf2c4654eba4c438bb45885d89960dc2, type: 3}
+  - {fileID: 8300000, guid: 291dd534f731c4b379cbce6bd8fe8a47, type: 3}
+  - {fileID: 8300000, guid: 6e278af182737451cab428cb976cc5bf, type: 3}
+  - {fileID: 8300000, guid: b1ea9aace62784eb6865b17c46042773, type: 3}
+  - {fileID: 8300000, guid: ef5b03037ee324f9394f44811d073dbd, type: 3}
+  - {fileID: 8300000, guid: 979b0d32e94ad4431855699371a1500f, type: 3}
+  - {fileID: 8300000, guid: 6505989e2c56545c591bb943be6debfd, type: 3}
+  - {fileID: 8300000, guid: bf727e47a60024bf1afd0dc9a26916b1, type: 3}
+  - {fileID: 8300000, guid: 63fffde5decba4680b3dc3f1644f3e88, type: 3}
+  - {fileID: 8300000, guid: 2ce69684ab32e4b328a88259f83fe1d8, type: 3}

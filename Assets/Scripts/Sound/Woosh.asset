@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e58bd491f91436cbcd3da6e74e04ef, type: 3}
+  m_Name: Woosh
+  m_EditorClassIdentifier: 
+  soundList:
+  - {fileID: 8300000, guid: ab1ada58574714f2fbdaffd0d289905e, type: 3}
+  - {fileID: 8300000, guid: 2d443fbd7b2b24030a00d259e9e2df25, type: 3}
+  - {fileID: 8300000, guid: cd191e43ba6d54c83926f96162e6e843, type: 3}
+  - {fileID: 8300000, guid: 9e7ab24c1da254e208011cb4bd62442a, type: 3}
+  - {fileID: 8300000, guid: fffbd74f66f2e4538a549ce45586c73d, type: 3}
+  - {fileID: 8300000, guid: 752b0eccf130c47f3971551aedf316a4, type: 3}
+  - {fileID: 8300000, guid: 275673f3d06c64121ac106cb2871c2e9, type: 3}
+  - {fileID: 8300000, guid: a23f73bcbb8604b41aa6cf75dd740609, type: 3}
+  - {fileID: 8300000, guid: 38bd4338988da41fc94b4d2144e7dfe0, type: 3}
+  - {fileID: 8300000, guid: 8196b50891a2e4cb39ed95243f7e36fa, type: 3}
+  - {fileID: 8300000, guid: f1086a2d1b79148cb9082de4f476a10a, type: 3}
+  - {fileID: 8300000, guid: 28835ed2980e24404b4b44fbd831487d, type: 3}
+  - {fileID: 8300000, guid: 6944c4e4ddc5a4e24ae08434c4051e72, type: 3}

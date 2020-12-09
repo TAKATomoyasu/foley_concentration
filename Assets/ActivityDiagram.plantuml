@@ -1,0 +1,36 @@
+@startuml
+title
+フローチャート図
+end title
+
+start
+
+partition Ready{
+  :音色選択;
+  :難易度の選択;
+}
+
+repeat
+partition １枚め{
+  :カードをめくる;
+  :音がなる;
+}
+partition ２枚め{
+  :カードをめくる;
+  :音がなる;
+}
+if (一致) then (yes)
+  :正解サウンド;
+  :カード２つを除く;
+else (no)
+  :失敗サウンド;
+  :複数人なら順番交代\n内部スコア用;
+endif
+
+repeat while (全てのカードがなくなった)is(No)
+:終了;
+:結果発表\nスコア＆失敗した回数;
+
+:リスタート;
+end
+@enduml

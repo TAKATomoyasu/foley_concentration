@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e58bd491f91436cbcd3da6e74e04ef, type: 3}
+  m_Name: Door
+  m_EditorClassIdentifier: 
+  soundList:
+  - {fileID: 8300000, guid: 1136b288e70814c09aef0636ef0c6d2a, type: 3}
+  - {fileID: 8300000, guid: 4d5bd54cebb0b4481b6bc71553bccd4c, type: 3}
+  - {fileID: 8300000, guid: 873b591a03c43441bba72444e17e53bb, type: 3}
+  - {fileID: 8300000, guid: 0e4044288c1c148b896fd57ac61ede1d, type: 3}
+  - {fileID: 8300000, guid: 5f471d2e252bd4b83b9be630c570191c, type: 3}
+  - {fileID: 8300000, guid: 4ea58cc13fe31498993e24aad9d562c6, type: 3}
+  - {fileID: 8300000, guid: bbf99d77b9d9041b093da8b030835324, type: 3}
+  - {fileID: 8300000, guid: ca0b7fb79a8c942edbfb3fd1bdd395ba, type: 3}
+  - {fileID: 8300000, guid: 85b71bc629513406784de7a6ed41c05a, type: 3}
+  - {fileID: 8300000, guid: 9494102a998e84457bd6479b62a531d3, type: 3}
+  - {fileID: 8300000, guid: cf2886bddb4c44db1b06b30e6e03f112, type: 3}
+  - {fileID: 8300000, guid: e32e39f2390da491189efb30178591e9, type: 3}
+  - {fileID: 8300000, guid: 29483acbc4da04332ad5ed15b7ec1dc0, type: 3}
+  - {fileID: 8300000, guid: 94d959080eb1e4857a96794693c24922, type: 3}
+  - {fileID: 8300000, guid: a11a209a2c581412398827a55495bd8c, type: 3}

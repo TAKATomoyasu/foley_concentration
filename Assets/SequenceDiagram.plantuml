@@ -1,0 +1,44 @@
+' マネージャークラス同士の処理だけ書くだけで十分らしい
+' BookStoreControllerはJsonDatabaseの値を自由に取ってこられるものとする
+' 関数は基本的にInvokeで実行し、引数が必要な物はprivate変数で賄う
+
+@startuml
+title
+シーケンス図
+end title
+
+participant UISoundPlayer as uisp
+participant SoundPlayer as sp
+database CardMap as cm
+participant GameManager as gm
+participant ScoreManager as sm
+participant StateManager as st
+actor Trigger as t
+
+==Initialize==
+gm -> cm: カード枚数設定(int)
+gm -> cm: シャッフル()
+gm -> sp: 音色変更(int)
+
+==Playing==
+gm -> t: トリガー監視
+gm /-- t
+gm -> st: bool カードがあるか(int)
+gm /-- st
+gm -> sp: 再生(int)
+gm -> cm: ２枚目なら\nbool マッチ判定(int, int)
+gm /-- cm
+
+
+
+'alt 詳細を見て本を確定
+'    uni -> ui : 他の本をクリック
+'    note left : その本の詳細を表示
+'else
+'    uni -> ui: もう一度同じ本をクリックで確定
+'    note left : 次の処理へ進む
+'end
+
+==Finished==
+
+@end

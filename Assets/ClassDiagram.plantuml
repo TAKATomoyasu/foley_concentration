@@ -1,0 +1,129 @@
+@startuml
+title
+クラス図
+end title
+hide empty members
+
+
+package Inputs{
+  interface ITrigger{
+    Observable<int> inputNum
+  }
+  package InputImpls{
+    class KeyTrigger
+    class ButtonTrigger
+    class NetworkTrigger
+    ITrigger <|-- KeyTrigger
+    ITrigger <|-- ButtonTrigger
+    ITrigger <|-- NetworkTrigger
+  }
+}
+
+package Map{
+  class CardMapController{
+    void シャッフル()
+    bool マッチ判定(int num1, int num2)\n　-1で上書き
+    bool カードが存在するか() 
+  }
+  class CardMap{
+    他の枚数でも対応可能に
+    int maxCardNum
+    int[] mapNum
+    {0,1,2,0,2,1}みたいに
+    完了したやつは-1に
+  }
+
+  CardMap <-  CardMapController
+}
+
+package Managers{
+  abstract BaseGameManager{
+    int currentPlayer ターン管理
+    ２連続チェック、ターンチェック
+    ルールで初期化
+  }
+  package GameManagerImpls{
+    class SoloGameManager <<M,CFC>>{
+      ひとりモード
+    }
+    class LocalGameManager <<M,CFC>>{
+      PC内で対戦。
+    }
+  class OnlineGameManager <<M,CFC>>{
+      オンライン対戦。ターン管理
+    }
+  }
+  class CardCounter{
+    残りのカード枚数をカウント。
+    bool 
+  }
+  class ScoreCounter{
+    複数人プレイ
+    何人プレイか最初に確認  
+  }
+  enum GameState{
+    Ready
+    Playing
+    Finished
+  }
+  class StateManager{
+    GameState state
+  }
+  ResultManager --> StateManager
+  ResultManager --> ScoreCounter
+}
+
+
+package Sound{
+  class UISoundPlayer{
+    ゲーム進行の音を鳴らす
+    correct, incorrect, noCard, clear
+  }
+  class SoundSet << S,pink,Scriptable >>{
+    音のリスト
+  }
+  class SoundPlayer{
+    カードの音を鳴らす
+  }
+  class ResultPlayer{
+    
+  }
+}
+
+
+SoundPlayer -> SoundSet
+CardMapController <- BaseGameManager
+SoundPlayer <-  BaseGameManager
+
+UISoundPlayer <-- BaseGameManager
+BaseGameManager --> CardCounter
+BaseGameManager -> ScoreCounter
+
+'StateManager <-- BaseGameManager
+StateManager --> GameState
+
+
+
+BaseGameManager <|-- SoloGameManager  
+BaseGameManager <|-- LocalGameManager  
+BaseGameManager <|-- OnlineGameManager  
+SoloGameManager -->"1" ITrigger :監視
+LocalGameManager -->"1" ITrigger :監視
+OnlineGameManager -->"2" ITrigger :監視
+StateManager <- BaseGameManager 
+
+ResultPlayer <- ResultManager
+
+
+
+
+@end
+
+
+
+
+
+
+
+
+
